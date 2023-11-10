@@ -2,47 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="example.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
+    <h1>Резюме</h1>
+    <div class="photo">
+        <p><img src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png" width="100" height="200" text-align="left" vspace="5" hspace="5"></p>
+     </div>
+        <div class="resume">
+            <div class="resume-section contacts">
+                <h2>Контактная информация</h2>
+                <table>
+                    <tr>
+                        <th>Имя</th>
+                        <td>Анель Абилдиева</td>
+                    </tr>
+                    <tr>
+                        <th>Дата рождения</th>
+                        <td>28.05.2005</td>
+                    </tr>
+                    <tr>
+                        <th>Телефон</th>
+                        <td>+7 (778) 916 5222</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>mgclmirai@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="resume-section education">
+                <h2>Образование</h2>
+                <table>
+                    <tr>
+                        <td<ul>
+                            <li>"Специализированный IT лицей", г. Актау, 2012-2023 гг.</li>
+                            <li>"Международный университет Астана", г. Астана, 2023 г.</li>
+                            
+                            <p><strong>Дополнительное образование</strong><p>
+                            <li>Прошла курсы английского языка от швейцарской компании IMT CLASS, "Tourism - ITALY" PROJECT, "Science - GREAT BRITAIN". </li>
+                            </ul>
+                            </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="resume-section skills">
+                <h2>Навыки</h2>
+                    <p>Знаю несколько языков:</p>
+                <ul>
+                    <li>Английский (Advanced)</li>
+                    <li>Русский (Advanced)</li>
+                    <li>Казахский (Native)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Свяжитесь со мной:</h1>
+            <form>
+                <label for="Name">Name:</label>
+                <input type="text" id="name"><br>
+                <label for="guestEmail">Your Email:</label>
+                <input type="email" id="guestEmail"><br>
+                <label for="question">Write your message:</label>
+                <textarea id="message"></textarea><br>
+                <button type="send">Send</button>
+            </form>
+        </div>
+        
 
-<thead>
-    <th>Languages</th>
-</thead>
-
-        <colgroup>
-            <col>
-        </colgroup>
-
-        <tr>
-            <td>Native:</td>
-            <td>Kazakh</td>
-        </tr>
-        <tr>
-            <td>Advanced:</td>
-            <td>Russian</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>English</td>
-        </tr>
-    </table>
-
-<div class="container"></div>
-    <div class="box">
-my box
-</div>
-<div>
-<span>Hi</span> <span>Hi</span>
-</div>
-
-
-<!-- это значит что у параграфа есть три отдельных класса -->
-<p class="myClass second" id="myId">My paragraph</p>
-
-<p class="myP" id="myId">Hello world!</p>
-
+<ul class="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  
+    </main>
 </body>
 </html>
