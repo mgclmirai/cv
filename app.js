@@ -103,6 +103,8 @@
 
 // console.log(res)
 
+
+// 1 exercise
 let inputEl1 = document.getElementById("my-first-input")
 let inputEl2 = document.getElementById("my-second-input")
 let button = document.getElementById("button")
@@ -112,6 +114,36 @@ button.onclick=function () {
     let num = Number(inputEl1.value) + Number(inputEl2.value)
     resultEl.textContent = num
 }
+
+// 2 exercise
+let inputNum = document.getElementById("inputNum")
+let buttonNum = document.getElementById("buttonNum")
+let resultNum = document.getElementById("result2")
+buttonNum.onclick = function(){
+  if (inputNum.value > 0) {
+    resultNum.textContent = "Positive"
+  } else if (inputNum.value == 0) {
+    resultNum.textContent = "They are even"
+  } else {
+    resultNum.textContent = "Negative"
+  }
+}
+
+
+
+
+// 3 задание
+let inputEvenCheck = document.getElementById("inputEvenCheck")
+let buttonEvenCheck = document.getElementById("buttonEvenCheck")
+let resultEvenCheck = document.getElementById("result3")
+buttonEvenCheck.onclick = function(){
+  if (+inputEvenCheck.value % 2 == 0) {
+    resultEvenCheck.textContent ="Even"
+  } else if (+resultEvenCheck % 2 !=1) {
+    resultEvenCheck.textContent ="Odd"
+  }
+}
+
 
 // 4 задание
 
