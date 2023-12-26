@@ -1,137 +1,107 @@
-
-
-// for (let i = 1; i <= num; i++){
-//     let a = num/2;
-//     if (i===a){
-//         continue;
-//     }
-
-//     console.log(i)
+// const textBox = document.querySelector("#textBox");
+// const output = document.querySelector("#output");
+// textBox.addEventListener("keydown", (event) => {
+//     output.textContent = `you pressed "${event.key}".`;
+// });
+// различие между
+// const button = document.getElementById("button")
+// button.addEventListener("click", (event) => {
+//     console.log("you clicked me", event)
+// })
+// и
+// button.onclick = () => {
+//     console.log("you clicked me", event)
+// };
+// function clickMe() {
+//     console.log("ypu clicked me")
 // }
 
-// let paragraph = document.querySelector("div p")
-// console.log(paragraph)
+// const input = document.querySelector(".input")
+// const greeting = document.querySelector(".greeting")
+// input.addEventListener("change", (event) => {
+//     greeting.textContent = `hiii, ${event.target.value}`
+// })
 
-// paragraph.style.backgroundColor = "yellow";
-// paragraph.style.fontSize = "200%";
-// paragraph.style.padding = "18px";
-// paragraph.style.boxShadow = " 3px 3px 6 px black";
+// let firstname = "anel"
+// let age = 23
+// let isTeacher = true
+// let status
 
-// console.log(paragraph)
-
-// let button = document.querySelector("#button")
-
-// function showResult(){
-//     let newElement = document.createElement("p")
-//     newElement.textContent = "you clicked me"
-
-//     document.body.append(newElement)
-
-//     console.log("click", showResult)
+// function greeting(){
+//     console.log(`hi, my name is ${firstname}`)
 // }
 
-// let button = document.querySelector("#button")
-// let input = document.querySelector("#input")
+let Person = {
+    firstname: "anel",
+    lastname: "abildiyeva",
+    age: 18,
+    isTeacher: false,
+    isStudent: true,
+    status: undefined,
+    lang: ["kaz", "rus", "eng"],
+    faculty: "translation studies",
+    haircolor: "black",
+    eyecolor: "brown, almost black",
+    weight: 45,
+    height: 155,
 
+    greeting(){
+        console.log(`hi, my name ${this.firstname}`)
+    },
+} 
 
+let cats = {
+    Mandarinka: {
+        poroda:"i don't know :D",
 
-// function getSquare(){
-//     let num = 15
-//     let i = 2
+        age: 6,
 
-//     while (i*i < num){
-//         let result = document.createElement("p")
-//         result.textContent = '${i*i}'
-//         document.body.append(result)
-        
-//         ++i
-//      }
-// }
+        color: ["black", "white", "brown"],
 
-// button.addEventListener('click', getSquare)
+        gender: "female",
 
-
-// 1 exercise
-function Factorial() {
-    let inputNumber = document.getElementById("numberInput").value;
-
-    let factorial = 1;
-    for (let i = 2; i <= inputNumber; i++) {
-        factorial *= i;
-    }
-    let resultElement = document.createElement("p");
-    resultElement.textContent = factorial;
-    document.body.append(resultElement)
-}
-
-
-// 2 exercise
-function degree() {
-    let degree = document.getElementById("degree").value;
-
-    let result1 = 1;
-    for (let i = 0; i < degree; i++) {
-        result1 *= 2;
-    }
-
-    let resultElement = document.getElementById("result1");
-    resultElement.textContent = result1;
-}
-
-
-// 3 exercise
-function find() {
-    let input = document.getElementById("input").value;
-
-    let small = 2;
-    while (small <= input) {
-        if (input % small === 0) {
-            break;
-        }
-        small++;
-    }
-
-    let resultElement = document.getElementById("result2");
-    resultElement.textContent = small;
-}
-
-
-// 4 exercise
-function findDivide() {
-    let inputNumber = document.getElementById("number").value;
-
-    let divide = [];
-    for (let i = 1; i <= Math.sqrt(inputNumber); i++) {
-        if (inputNumber % i === 0) {
-            divide.push(i);
-            if (i !== inputNumber / i) {
-                divide.push(inputNumber / i);
-            }
-        }
-    }
-    divide.sort((a, b) => a - b);
+        isKids: false,
+    },
     
-    let resultElement = document.getElementById("result3");
-    resultElement.textContent = `Делители числа ${inputNumber}: ${divide.join(', ')}`;
-}
+    Pushok: {
+        poroda: "british",
+        age: 4,
+        color: ["black", "gray"],
+        gender: "male"
+    },
 
+    Murka: {
+        poroda: "i don't know :D",
+        age: 6,
+        color: "black",
+        gender: "male"
+    },
 
-// 7 exercise
-function check() {
-    let inputNumber = document.getElementById("Prime").value;
-
-    let isPrime = true;
-    for (let i = 2; i <= Math.sqrt(inputNumber); i++) {
-        if (inputNumber % i === 0) {
-            isPrime = false;
-            break;
-        }
+    Bezzubiy: {
+        poroda: "i don't know :D",
+        age: 4,
+        color: "black",
+        gender: "male"
     }
 
-    let resultElement = document.getElementById("result7");
-    if (isPrime) {
-        resultElement.textContent = `${inputNumber} - prime number`;
-    } else {
-        resultElement.textContent = `${inputNumber} - not prime number`;
-    }
 }
+// Person.firstname = "Saule"
+// Person.lang.push("ger")
+// console.log(Person)
+
+// Person.skills = ["js", "html", "css"]
+// Person.greeting()
+
+// let _name = Person.firstname
+// console.log(_name)
+
+// console.log(Person.firstname)
+// console.log(Person["age"])
+
+for (let key in cats){
+    console.log(key)
+    console.log(cats[key])
+}
+
+// console.log(Person.hasOwnProperty("firstname"))
+// console.log(Person.hasOwnProperty("toString"))
