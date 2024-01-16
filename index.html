@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <!-- <input id="textBox" type="text" \>
-    <div id="output"></div> -->
-    <!-- <button id="button" onclick="clickMe()">Click</button> -->
-    
-    <label>Введите</label>
-    <input type="text" class="input"></label>
-    <div class="greeting"></div>
-    
+  </head>
+  <body>
+    <section id="Итого:">
+      <h2>Итого:</h2>
+      <p>Result: <span id="reduceResult"></span></p>
+    </section>
+
+    <section id="filterExample">
+      <h2>Filter Example</h2>
+      <p>Result: <span id="filterResult"></span></p>
+    </section>
+
+    <section id="mapExample">
+      <h2>Map Example</h2>
+      <p>Result: <span id="mapResult"></span></p>
+    </section>
+
+    <section id="sortExample">
+      <h2>Сортировать по цене:</h2>
+      <p>Result: <span id="sortResult"></span></p>
+    </section>
+
+    <section id="userInput">
+      <h2>Введите числа</h2>
+      <label for="userNumbers">Введите числа (через запятую): </label>
+      <input type="text" id="userNumbers" />
+      <button onclick="perform()">вычислить</button>
+    </section>
+
+    <h3>Ваша корзина:</h3>
+    <p>Мука - 1</p>
+    <p>Яблоки - 2</p>
+    <p>Бананы - 3</p>
+    <p>Мандарины - 4</p>
+    <p>Печенье - 5</p>
+    <p>Чай - 6</p>
+    <p>Отбеливатель - 7</p>
+    <p>Порошок - 8</p>
+    <p>Мука - 9</p>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
